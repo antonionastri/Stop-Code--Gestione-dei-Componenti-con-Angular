@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.box{
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.box img{
+    width: 150px;
+    margin: 15px 10px;
+}
+
+h2, h3, h4, h5{
+    background-color: cadetblue;
+    width: fit-content;
+    padding: 5px;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="box" *ngFor="let descrizione of Prodotti">
+        <h2>{{descrizione.title}}</h2>
+        <img [src]="descrizione.image" *ngIf="descrizione.rating.rate > 3">
+        <h3>Prezzo: {{descrizione.price}}€</h3>
+        <p><span style="font-weight: bold;">Descrizione:</span> {{descrizione.description}}</p>
+        <h4>Categoria: {{descrizione.category | uppercase}}</h4>
+        <h4>Rating: {{descrizione.rating.rate}}</h4>
+        <h5>Ordini: {{descrizione.rating.count}}</h5>
+    </div>
+</div>
